@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/*--------( Reset )--------*/
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ font:inherit;
+ vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+ display:block;
+}
+body{
+ line-height:1;
+}
+ol,ul{
+ list-style:none;
+}
+blockquote,q{
+ quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+ content:'';
+ content:none;
+}
+ins{
+ text-decoration:none;
+}
+del{
+ text-decoration:line-through;
+}
+table{
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+header, footer, article, section, nav, menu, hgroup {
+ display: block;
+}
+
+/*--------( Utilities )--------*/
+
+.center { text-align:center; }
+.right{float:right;}
+.left{float:left;}
+.spacer{height: 35px; }
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix {display:inline-block;}
+/* Hide from IE Mac \*/
+.clearfix {display:block;}
+/* End hide from IE Mac */
+
+
+/*--------( Primary )--------*/
+body{
+ padding: 20px;
+ background: #fbfbfb;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size: 12px;
+}
+
+h1{ 
+ display: block;
+ font-size: 24px;
+ color: #444;
+ text-shadow: 2px 0px 0px #fff;
+ font-family:"Bitstream Vera Sans Mono",Monaco,"Lucida Console",monospace;
+ font-weight: normal;
+ margin: 6px 20px 6px 6px;
+ padding:0px;
+}
+
+/*--------( Layout--------*/
+
+#wrapper {
+ position: relative;
+ margin: 0 auto;
+}
+
+/*--------( Misc. --------*/
+
+.width10 { width: 10% }
+.width19{width: 19%;}
+.width49 {width: 49%;}
+.width23 {width: 23%;}
+.width75 { width: 75%; }
+.width29 {width: 26%;}
+.width60 { width: 62%; }
+.width65 { width: 65%; }
+.width960 { width: 960px; }
