@@ -1,12 +1,6 @@
 <?php
 
 class Table{
-
-   public function test() {
-	   echo 'hello world';
-	
-  }
-  
   
   public function initialize($ipp, $page, $limit) {
 	$db = connect();
@@ -31,10 +25,7 @@ class Table{
    if ($count == 0) {
       return false;
    }
-   
-   $test = 2;
-   
-	echo '{"status":"success", "data":{"rows":'.json_encode($rows).', "count":'.$count.'}, "test":'.$test.'}';
+	echo '{"status":"success", "data":{"rows":'.json_encode($rows).', "count":'.$count.'}}';
 	
   }
   
