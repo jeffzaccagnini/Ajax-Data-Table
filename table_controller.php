@@ -35,7 +35,7 @@ try{
 			Table::initialize($ipp, $page, $limit);
 			break;
 		default:
-			Table::Initialize($ipp, $page, $limit);
+			Table::initialize($ipp, $page, $limit);
 			break;
 	}
 

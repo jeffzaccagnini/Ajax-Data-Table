@@ -29,12 +29,9 @@
 </head>
 
 <body>
-
 <!-- Content Wrapper -->
 <div id="wrapper" class="width960">
  <h1>Data Table Example</h1>
- <hr />
- <p>A <a href="http://en.wikipedia.org/wiki/Table_(information)" target="_blank">table</a> is a means of arranging <a href="http://dev.mysql.com/doc/world-setup/en/world-setup.html" target="new">data</a> in rows and columns. The use of tables is pervasive throughout all communication, research and data analysis. </p>
  
  <!-- Start Table -->
  <div class="table_wrap clearfix">
@@ -48,40 +45,59 @@
   <button id="delete_btn" type="button" class="left" style="display: none;"><span></span>Delete</button>
   <button id="save_all" class="left" style="display: none;">Save All</button>
   <button id="filter_btn" type="button" class="right"><span class="ui-button-text">Filter</span></button>
-  <div id="ipp_select" class="right"></div>
+  <div class="right">Showing <span id="ipp_select"></span> entries</div>
  </div>
  
  <!-- Table Filter -->
- <div id="filter" class="clearfix">		 
- </div>
+ <div id="filter" class="clearfix"></div>
  
  <!-- Data Table -->
- <div class="data_table clearfix">
-  <table id="city_table">
-  <thead>
-  <tr>
-  <th style="width: 30px; text-align:center;"><input id="check_all" name="check_all" type="checkbox" /></th>
-  <th>Name</th>
-  <th>CountryCode</th>
-  <th>District</th>
-  <th>Population</th>
-  </tr>
-  </thead>
-  <tbody>
-  <!-- Data Will Load Here -->
-  </tbody>
-  </table>
- </div>
+ <div id="data_table" class="data_table clearfix"></div>
  
  <!-- Table Footer -->
  <div class="table_foot clearfix">
-  <div id="page_info" class="left"><p><span class="current_page"><span class="low"></span> - <span class="high"></span> of <span id="count"></span> entries.</p></div>
-  <div id="page_links" class="right"></div>
-  <div id="page_select" class="right"></div>
+  <span id="page_links" class="right"></span>
+  <div class="left">Page <span id="page_select"></span> of <span class="total_pages"></span></div>
  </div>
- 
 </div>
 
+<div id="statistics">
+ <h1>Table Stats</h1>
+ <table>
+ <tr>
+ <td><strong>Entries per page:</strong></td>
+ <td><span class="ipp"></span></td>
+ <tr>
+ <tr>
+ <td><strong>Current page:</strong></td>
+ <td><span class="current_page"></span></td>
+ <tr>
+ <tr>
+ <td><strong>Total entries:</strong></td>
+ <td><span class="count"></span></td>
+ <tr>
+ <tr>
+ <td><strong>Total pages:</strong></td>
+ <td><span class="total_pages"></span></td>
+<tr>
+<tr>
+ <td><strong>Active entry:</strong></td>
+ <td><span id="active"></span></td>
+<tr>
+<tr>
+ <td><strong>Num Selected:</strong></td>
+ <td><span id="selected"></span></td>
+<tr>
+<tr>
+ <td><strong>Selected Entries:</strong></td>
+ <td><span id="selected_ids"></span></td>
+<tr>
+</table>
+</div>
+<div class="spacer"></div>
+<div><p>Git: <a href="https://github.com/j3ffz/Ajax-Data-Table/" target="_blank">Ajax-Data-Table</a></p></div>
+ </div>
+ 
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -95,5 +111,6 @@
   })();
 
 </script>
+
 </body>
 </html>
